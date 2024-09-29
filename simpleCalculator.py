@@ -1,6 +1,5 @@
 #simpleCalculator.py
 #simple calculator using Tkinter
-#todo: resize fontsize with windowsize
 
 from Tkinter import *
 from expression import *
@@ -11,6 +10,9 @@ root = Tk()
 #root window title and dimension
 root.title("Calculator")
 root.minsize(200, 200)
+
+#disable window resizing
+root.resizable(False,False)
 
 #create an Expression for user input
 expression = Expression(StringVar())
